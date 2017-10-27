@@ -1,0 +1,360 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title> Geometry  · Scratchapixel NoteBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="whpointz">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../Volume_0_Mathematics_and_Physics_for_Computer_Graphics/0.1_Geometry.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://whpointz.coding.me/whpointz" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../volume-0-mathematics-and-physics-for-computer-graphics.html">
+            
+                <a href="../volume-0-mathematics-and-physics-for-computer-graphics.html">
+            
+                    
+                    Volume 0 Mathematics and Physics for Computer Graphics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Volume_0_Mathematics_and_Physics_for_Computer_Graphics/0.1_Geometry.html">
+            
+                <a href="../Volume_0_Mathematics_and_Physics_for_Computer_Graphics/0.1_Geometry.html">
+            
+                    
+                    0.0 Geometry
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="Geometry.html">
+            
+                <a href="Geometry.html">
+            
+                    
+                     Geometry 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." > Geometry </a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#&#x901A;&#x7528;&#x77E2;&#x91CF;&#x7C7B;&#x7684;&#x5B9E;&#x73B0;">&#x901A;&#x7528;&#x77E2;&#x91CF;&#x7C7B;&#x7684;&#x5B9E;&#x73B0;</a></li></ul></div><a href="#&#x901A;&#x7528;&#x77E2;&#x91CF;&#x7C7B;&#x7684;&#x5B9E;&#x73B0;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x901A;&#x7528;&#x77E2;&#x91CF;&#x7C7B;&#x7684;&#x5B9E;&#x73B0;"><a name="&#x901A;&#x7528;&#x77E2;&#x91CF;&#x7C7B;&#x7684;&#x5B9E;&#x73B0;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x7528;&#x77E2;&#x91CF;&#x7C7B;&#x7684;&#x5B9E;&#x73B0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x7528;&#x77E2;&#x91CF;&#x7C7B;&#x7684;&#x5B9E;&#x73B0;</h1>
+<pre class="language-"><code class="lang-c++">template<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typename</span> <span class="token attr-name">T</span><span class="token punctuation">&gt;</span></span>
+class Vec3
+{
+public:
+    Vec3() : x(0), y(0), z(0) {}
+    Vec3(T xx) : x(xx), y(xx), z(xx) {}
+    Vec3(T xx, T yy, T zz) : x(xx), y(yy), z(zz) {}
+    Vec3 operator + (const Vec3 &amp;v) const
+    { return Vec3(x + v.x, y + v.y, z + v.z); }
+    Vec3 operator - (const Vec3 &amp;v) const
+    { return Vec3(x - v.x, y - v.y, z - v.z); }
+    Vec3 operator * (const T &amp;r) const
+    { return Vec3(x * r, y * r, z * r); }
+    T dotProduct(const Vec3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span> &amp;v) const
+    { return x * v.x + y * v.y + z * v.z; }
+    T crossProduct(const Vec3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span> &amp;v) const
+    { return Vec3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>(y * v.z - z * v.y, z * v.x - x * v.z, x * v.y - y * v.x); }
+    T norm() const
+    { return x * x + y * y + z * z; }
+    T length() const
+    { return sqrt(norm()); }
+    const T&amp; operator [] (uint8_t i) const { return (&amp;x)[i]; }
+    T&amp; operator [] (uint8_t i) { return (&amp;x)[i]; }
+    Vec3&amp; normalize()
+    {
+        T n = norm();
+        if (n &gt; 0) {
+            T factor = 1 / sqrt(n);
+            x *= factor, y *= factor, z *= factor;
+        }
+
+        return *this;
+    }
+
+    friend std::ostream&amp; operator &lt;&lt; (std::ostream &amp;s, const Vec3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span> &amp;v)
+    {
+        return s &lt;&lt; &apos;(&apos; &lt;&lt; v.x &lt;&lt; &apos; &apos; &lt;&lt; v.y &lt;&lt; &apos; &apos; &lt;&lt; v.z &lt;&lt; &apos;)&apos;;
+    }
+
+    T x, y, z;
+};
+
+typedef Vec3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>float</span><span class="token punctuation">&gt;</span></span> Vec3f;
+typedef Vec3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span> Vec3i;
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright whpointz 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">The revision time:
+2017-10-27 23:52:10
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Volume_0_Mathematics_and_Physics_for_Computer_Graphics/0.1_Geometry.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 0.0 Geometry">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":" Geometry ","level":"2.1","depth":1,"previous":{"title":"0.0 Geometry","level":"1.2.1","depth":2,"path":"Volume_0_Mathematics_and_Physics_for_Computer_Graphics/0.1_Geometry.md","ref":"Volume_0_Mathematics_and_Physics_for_Computer_Graphics/0.1_Geometry.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","github@^2.0.0","prism@^2.1.0","prism-themes@^0.0.2","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","tbfed-pagefooter@^0.0.1","anchor-navigation-ex@0.1.8","todo@^0.1.3"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright whpointz 2017","modify_label":"The revision time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"emphasize":{},"ace":{},"github":{"url":"https://github.com/whpointz/Scratchapixel-Notes"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"prism-themes":{},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"whpointz","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Scratchapixel NoteBook","language":"zh-hans","links":{"sidebar":{"Home":"https://whpointz.coding.me/whpointz"}},"gitbook":"3.2.3","description":"�Ķ�CG�̳�Scratchapixel��һЩ�ʼ�"},"file":{"path":"SourceCode/Geometry.md","mtime":"2017-10-27T15:52:10.325Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-27T15:53:19.191Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
